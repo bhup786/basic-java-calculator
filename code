@@ -13,7 +13,7 @@ class Main {
     System.out.println("Choose an operator: +, -, *, or /");
     operator = input.next().charAt(0);
 
-    // ask users to enter numbers
+    // ASK USERS TO ENTER OPERATORS
     System.out.println("Enter first number");
     number1 = input.nextDouble();
 
@@ -22,7 +22,7 @@ class Main {
 
     switch (operator) {
 
-      // performs addition between number
+      // performs addition between numbers
       case '+':
         result = number1 + number2;
         System.out.println(number1 + " + " + number2 + " = " + result);
