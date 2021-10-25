@@ -5,20 +5,31 @@ class Main {
 
     char operator;
     Double number1, number2, result;
-
+    
     // create an object of Scanner class
     Scanner input = new Scanner(System.in);
 
-    // ask users to enter operators
-    System.out.println("Choose an operator: +, -, *, or /");
-    operator = input.next().charAt(0);
+    if(args.length == 0)
+    {
+        // ask users to enter operators
+        System.out.println("Choose an operator: +, -, *, or /");
+        operator = input.next().charAt(0);
 
-    // ask the user to enter numbers
-    System.out.println("Enter first number");
-    number1 = input.nextDouble();
+        // ask the user to enter numbers
+        System.out.println("Enter first number");
+        number1 = input.nextDouble();
 
-    System.out.println("Enter second number");
-    number2 = input.nextDouble();
+        System.out.println("Enter second number");
+        number2 = input.nextDouble();
+    }else
+    {
+        if(args.length < 3)
+            System.exit(-1);
+        
+        number1 = Double.parseDouble(args[0]);
+        operator = args[1].charAt(0);
+        number2 = Double.parseDouble(args[2]);
+    }
 
     switch (operator) {
 
