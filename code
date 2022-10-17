@@ -7,7 +7,11 @@ class Main {
 
     char operator;
     Double number1, number2, result;
+patch-2
+    Double number1,  result;
+
     Double number1, number2;
+ main
 
 
     Scanner input = new Scanner(System.in);
