@@ -18,6 +18,8 @@ patch-2
     Scanner input = new Scanner(System.in);
 patch-3
      Scanner input = new Scanner(System.in);
+          Scanner input = new Scanner(System.in);
+
     Scanner input = new Scanner(System.in);
 
 main
