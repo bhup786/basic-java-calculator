@@ -23,7 +23,7 @@ patch-3
 main
 
 
-    // ask users to enter operators +, -, *, or /
+    // ask users to enter the operators +, -, *, or /
     System.out.println("Choose an operator: +, -, *, or /");
     operator = input.next().charAt(0);
     operator = input.next().charAt(0);
